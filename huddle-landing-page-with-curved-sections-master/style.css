@@ -10,6 +10,7 @@
     --color-pink-200: #ff52bf;
 
     --colo-stats-description: #7e8d9a;
+    --color-neutral-200: hsl(207, 100%, 98%);
 }
 * {
     margin: 0;
@@ -69,11 +70,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8rem;
-    margin-block: 200px 0px;
-    margin-inline: 162.667px;
+
+    margin-block: 12.5rem 0px;
 }
 
+.hero {
+    margin-inline: 10.17rem;
+}
 .hero .text__container {
     display: flex;
     align-items: center;
@@ -82,7 +85,7 @@ body {
 }
 
 .hero .text__container h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .hero .text__container p {
@@ -98,6 +101,7 @@ body {
     border-radius: 2.5rem;
     font-size: var(--button-font-200);
     background-color: var(--color-pink-200);
+    margin-bottom: 8rem;
     color: white;
     font-weight: 700;
     border: none;
@@ -107,6 +111,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    padding-inline: 10.15rem;
+    padding-block: 7.5rem;
 }
 
 .stats .stats__number {
@@ -119,10 +125,18 @@ body {
     color: var(--colo-stats-description);
 }
 
-.feature__panel--container {
+.feature__panel {
+    margin-block: 6.5rem;
+    position: relative;
+}
+
+.feature__panel--curve {
     display: flex;
     align-items: center;
-    padding-inline: 5.85rem;
+    position: relative;
+    background-color: var(--color-neutral-200);
+    padding-inline: 10.17rem;
+    gap: 1rem;
 }
 
 .feature__panel--description h2 {
@@ -131,9 +145,54 @@ body {
 }
 
 .feature__panel--description p {
-    width: 75%;
+    width: 90%;
+    font-size: 1rem;
 }
 
-.feature__panel--image img {
+.feature__panel--curve .feature__panel--image img {
     width: 100%;
+}
+
+.feature__panel .curve {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.feature__panel .curve--top {
+    bottom: 98%;
+}
+
+.feature__panel .curve--bottom {
+    top: 98%;
+}
+
+.feature__panel .desktop {
+    display: block;
+}
+
+.feature__panel .mobile {
+    display: none;
+}
+
+.feature__panel--solid {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-inline: 10.17rem;
+    column-gap: 7.5rem;
+}
+
+.feature__panel--solid .feature__panel--image img {
+    width: 100%;
+}
+
+.feature__panel--solid .feature__panel--description h2 {
+    font-size: clamp(1.25rem, 0rem + 5.375vw, 2.2rem);
+}
+
+.feature__panel--solid .feature__panel--description p {
+    width: 100%;
+    font-size: 1rem;
 }

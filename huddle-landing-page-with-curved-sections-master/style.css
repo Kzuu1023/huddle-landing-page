@@ -11,6 +11,8 @@
 
     --colo-stats-description: #7e8d9a;
     --color-neutral-200: hsl(207, 100%, 98%);
+
+    --footer-bg-color: #00252e;
 }
 * {
     margin: 0;
@@ -195,4 +197,85 @@ body {
 .feature__panel--solid .feature__panel--description p {
     width: 100%;
     font-size: 1rem;
+}
+
+.encouragement__cta .cta__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-block: 10.625rem 15.625rem;
+}
+
+.encouragement__cta h2 {
+    font-size: 2rem;
+}
+
+.encouragement__cta button {
+    width: 23rem;
+    height: 4.5rem;
+    border-radius: 2.5rem;
+    font-size: var(--button-font-200);
+    background-color: var(--color-pink-200);
+    margin-bottom: 8rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.footer {
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footer-bg-color);
+    padding-block: 7.25rem 6.375rem;
+    padding-inline: 1.75rem;
+    width: 100%;
+}
+
+.footer .curve {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .curve--top {
+    bottom: 100%;
+}
+
+.footer .curve--mobile {
+    top: 80%;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contacts__items h3 {
+    font-size: 2.2rem;
+}
+
+.contacts__items p {
+    font-size: 0.8rem;
+    width: 40%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contacts .contacts__lists {
+    display: flex;
+    gap: 1rem;
 }

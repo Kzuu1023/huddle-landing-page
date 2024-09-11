@@ -206,6 +206,13 @@
 
                 <footer class="footer">
                     <section class="feature__panel--footer">
+                        <div class="footer__mobile">
+                            <img
+                                class="curve curve--mobile footer"
+                                src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-mobile.svg"
+                                alt=""
+                            />
+                        </div>
                         <div class="footer__image">
                             <img
                                 class="curve curve--top footer"
@@ -214,14 +221,18 @@
                             />
                         </div>
                     </section>
-                    <div class="footer__items">
+
+                    <section class="footer__items">
                         <div class="contacts__container">
                             <div class="contacts__items">
-                                <img
-                                    src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master//images/icon-messages.svg"
-                                    alt=""
-                                />
-                                <h3>Huddle</h3>
+                                <div class="contacts__huddle">
+                                    <img
+                                        src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/icon-messages.svg"
+                                        alt="huddle"
+                                    />
+                                    <h3>Huddle</h3>
+                                </div>
+
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Mauris nulla quam,
@@ -229,29 +240,63 @@
                                     quis sem.
                                 </p>
                             </div>
+
                             <div class="contacts">
                                 <div class="contacts__lists">
-                                    <span class="contacts__icon">
-                                        <img
-                                            src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/icon-phone.svg"
-                                            alt=""
-                                        />
-                                    </span>
-                                    <span>Phone: +1-543-123-4567</span>
-                                </div>
+                                    <a href="#">
+                                        <span class="contact__list--icon">
+                                            <img
+                                                src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/icon-phone.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="contact__list--links">
+                                            Phone: +1-543-123-4567
+                                        </span>
+                                    </a>
 
-                                <div class="contacts__lists">
-                                    <span class="email__icon">
-                                        <img
-                                            src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/icon-email.svg"
-                                            alt=""
-                                        />
-                                    </span>
-                                    <span>example@company.com</span>
+                                    <a href="#">
+                                        <span class="contact__list--icon">
+                                            <img
+                                                src="/huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/icon-email.svg"
+                                                alt=""
+                                            />
+                                        </span>
+                                        <span class="contact__list--links">
+                                            example@company.com
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="newsletter__container">
+                            <div class="newsletter__items">
+                                <div class="newsletter__text">
+                                    <h3>NEWSLETTER</h3>
+                                    <p>
+                                        To recieve tips on how to grow your
+                                        community, sign up to our weekly
+                                        newsletter. We’ll never send you spam or
+                                        pass on your email address
+                                    </p>
+                                </div>
+                                <form class="sign__up">
+                                    <input
+                                        class="form__input"
+                                        type="email"
+                                        name="email"
+                                        id="form__email"
+                                        aria-label="subscribe to newsletter"
+                                    />
+
+                                    <button class="subscribe__btn">
+                                        Subscibe
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
                 </footer>
             </section>
         </main>

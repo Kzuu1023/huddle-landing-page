@@ -13,6 +13,7 @@
     --color-neutral-200: hsl(207, 100%, 98%);
 
     --footer-bg-color: #00252e;
+    --font-weight-semibold: 600;
 }
 * {
     margin: 0;
@@ -26,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 .attribution {
     font-size: 11px;
@@ -225,10 +227,12 @@ a {
     font-weight: 700;
     border: none;
 }
-
 .footer {
     color: white;
+    background-color: var(--footer-bg-color);
+    padding: 3.5rem 1.75rem 2.875rem;
     position: relative;
+    width: 100%;
 }
 
 .footer .curve {
@@ -243,7 +247,7 @@ a {
 }
 
 .footer .curve--mobile {
-    top: 90%;
+    top: 100%;
 }
 
 .feature__panel--footer .curve--top {
@@ -254,43 +258,55 @@ a {
     display: none;
 }
 
-.footer__items {
-    background-color: var(--footer-bg-color);
-    padding: 3.5rem 1.75rem 2.875rem;
+.content__container p {
+    font-weight: var(--font-weight-semibold);
+    width: 65%;
+    font-size: 0.8rem;
+    margin-bottom: 2.5rem;
 }
 
-.contacts__container {
+.contacts .contacts__lists {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
 }
 
-.contacts__items .contacts__huddle {
+.contacts .contacts__lists a {
+    display: flex;
+    gap: 1rem;
+}
+
+.contacts .contacts__lists .contact__list--icon {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+}
+
+.footer .footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 75rem;
+}
+
+.footer .footer__logo {
     margin-bottom: 1rem;
+    max-width: 12.5rem;
 }
 
-.contacts__items .contacts__huddle h3 {
-    font-size: 2.2rem;
+.footer .footer__logo img {
+    filter: brightness(0) invert(1);
+    width: 100%;
 }
 
-.contacts__lists {
+.footer .social__links {
     display: flex;
-    color: white;
-    flex-direction: column;
-    gap: 1rem;
-}
-.contacts__lists a {
-    display: flex;
-    color: white;
     gap: 1rem;
 }
 
-.contacts__items p {
-    font-size: 0.8rem;
-    width: 50%;
+.social__links img {
+    width: 24px;
+    height: 24px;
 }
 
 .newsletter__container .newsletter__items {
@@ -300,7 +316,7 @@ a {
 }
 
 .newsletter__items .newsletter__text p {
-    width: 50%;
+    width: 65%;
 }
 
 .newsletter__container .newsletter__text h3 {
@@ -310,7 +326,6 @@ a {
 .newsletter__items .sign__up .form__input {
     border: none;
     border-radius: 0.375rem;
-
     padding: 0.75rem 1rem;
     width: 100%;
 }
